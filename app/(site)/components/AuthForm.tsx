@@ -86,7 +86,6 @@ const AuthForm = () => {
 
 		signIn(action, { redirect: false })
 			.then((callback) => {
-				console.log(callback);
 				if (callback?.error) {
 					notification.error("Invalid credentials");
 				}
